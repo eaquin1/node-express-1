@@ -16,7 +16,7 @@ app.post("/", async function (req, res, next) {
 
         return res.send(results);
     } catch (err) {
-        next(err);
+        return next(err);
     }
 });
 
