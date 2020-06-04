@@ -21,7 +21,6 @@ function readFile(path) {
 /* Make a GET request for each URL, and save the HTML in a new file */
 
 async function requestURL(paths) {
-    console.log(paths);
     for (i of paths) {
         try {
             let p = await axios.get(i);
